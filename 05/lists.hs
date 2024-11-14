@@ -1,11 +1,11 @@
-module Ep05Lists where
+module Lists where
 
     myElem :: (Eq a) => a -> [a] -> Bool
     myElem item xs
         | null xs         = False
         | item == head xs = True
         | otherwise       = myElem item $ tail xs
-    
+
 
     myNub :: (Eq a) => [a] -> [a]
     myNub lst
