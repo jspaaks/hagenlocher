@@ -1,4 +1,4 @@
-module Ep11Folding where
+module Folding where
     revr :: [a] -> [a]
     revr lst = foldr f [] lst where
         f elem acc = (<>) acc [elem]
